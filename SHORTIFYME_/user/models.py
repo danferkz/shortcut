@@ -9,6 +9,10 @@ class users (models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+    class Meta:
+        verbose_name = 'user'
+        verbose_name_plural = 'users'
+    
 
     def __str__(self):
         return self.name
