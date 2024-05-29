@@ -1,7 +1,9 @@
+
 from django.shortcuts import render
-from django.template import loader
+from django.http import HttpResponse
 
+def login(request):
+    return render(request, 'accounts/Register.html')
 
-# Create your views here.
-def signin (request):
-    return render(request, 'accounts/Login.html')
+def reg(request):
+    return render(request, 'accounts/Register.html')

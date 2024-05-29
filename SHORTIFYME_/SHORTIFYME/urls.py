@@ -18,12 +18,15 @@ from django.contrib import admin
 from django.conf.urls.static import static 
 from django.conf import settings
 from django.urls import path
-from django.urls import 
 from user import views
-from django.urls import include, path, namespace
+from django.urls import include, path
+from user import views
+from django.urls import include, path
+from user import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('user.urls', namespace('user'))),
+    path('', views.login),
+    path('submit_login', views.reg)
 ]
 
-handler404 = 'user.views.error_404'
+#handler404 = 'user.views.error_404'
