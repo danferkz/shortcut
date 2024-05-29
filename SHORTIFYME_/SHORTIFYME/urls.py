@@ -22,11 +22,13 @@ from user import views
 from django.urls import include, path
 from user import views
 from django.urls import include, path
-from user import views
+
+from base import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login),
-    path('submit_login', views.reg)
+    path('home', views.home, name='home'),
+    path('', views.base, name='base'),
+    path('login', include('user.urls'))
 ]
 
 #handler404 = 'user.views.error_404'
