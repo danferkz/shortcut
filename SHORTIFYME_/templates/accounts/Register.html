@@ -9,7 +9,7 @@
 <body>
     <div class="register-container">
         <h2>Register</h2>
-        <form action="/submit_login" method="post">
+        <form action="{% url 'base:home' %}" method="post">
             {% csrf_token %}
             <label for="name">Name</label>
             <input type="text" id="name" name="name" maxlength="50" required>
