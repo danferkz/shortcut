@@ -23,7 +23,7 @@ from base import views as base_views  # Importa views de base con un alias para 
 #from user import views as user_views  # Importa views de user con un alias
 
 urlpatterns = [
-  # Asegúrate de agregar una barra diagonal al final
+    path('home/', base_views.home, name='home'),  # Asegúrate de agregar una barra diagonal al final
     path('', base_views.base, name='base'),
     path('user/', include('user.urls')),
     path('admin/', admin.site.urls),# Cambia 'login' a 'user' para incluir todas las rutas de user.urls
