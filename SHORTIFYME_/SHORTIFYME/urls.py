@@ -26,7 +26,8 @@ urlpatterns = [
     path('home/', base_views.home, name='home'),  # Asegúrate de agregar una barra diagonal al final
     path('', base_views.base, name='base'),
     path('user/', include('user.urls')),
-    path('admin/', admin.site.urls),# Cambia 'login' a 'user' para incluir todas las rutas de user.urls
+    path('admin/', admin.site.urls),
+    path('card/', include('cards.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
