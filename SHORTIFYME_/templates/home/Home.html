@@ -14,7 +14,8 @@
         <a href="#about">Acerca de</a>
         <a href="#services">Servicios</a>
         <a href="#contact">Contacto</a>
-        <a href="/login">Login</a>
+        <a href="{% url 'user:login' %}">Login</a>
+        <a href="{% url 'cards:createcard' %}">Create</a>
     </nav>
     <main>
         <section id="home">

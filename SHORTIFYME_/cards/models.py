@@ -1,22 +1,6 @@
 from django.db import models
 from base.models import bases
-"""""""""
-class urlsmanager(bases):
-    def _create_url(self, description, url_l, url_s):
-        urls = self.model(
-            description=description,
-            url_l=url_l,
-            url_s=url_s
-        )
-        urls.save(using=self._db)
-        return urls
-    
-    def create_url_long(self, description, url_l):
-        return self._create_url(description, url_l, None)
-    
-    def create_url_short(self, description, url_s):
-        return self._create_url(description, None, url_s)
-"""
+
 
 class tag(models.Model):
     tagName = models.CharField(max_length=255)
