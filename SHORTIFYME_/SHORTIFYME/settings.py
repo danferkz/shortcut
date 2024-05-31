@@ -141,3 +141,11 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+
+AUTH_USER_MODEL = 'user.CustomUser'  # Reemplaza 'yourapp' con el nombre de tu aplicación
+LOGIN_REDIRECT_URL = 'home'  # Redirigir al usuario después del login
+LOGIN_REDIRECT_URL = '/admin/'  # Redirigir al usuario después del logout
+
+# Configuración de la sesión
+SESSION_COOKIE_SECURE = True  # Usar cookies seguras si estás utilizando HTTPS
+CSRF_COOKIE_SECURE = True  
