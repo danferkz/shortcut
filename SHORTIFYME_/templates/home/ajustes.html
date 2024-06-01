@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortifyMe - Gestión de Links</title>
+    <link rel="stylesheet" href="styles/links-styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="Home.html">
+                <h1>ShortifyMe</h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="links.html">Links</a></li>
+                    <li class="seleccionado"><a href="ajustes.html">Ajustes</a></li>
+                    <div class="clear"></div>
+                </ul>
+                <ul class="header-right">
+                    <li><a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/github.png" alt="Github"/></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/search.png" alt="Buscar"/></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/sun.png" alt="Tema"/></a></li>
+                    <li><a href="#"><img src="https://img.icons8.com/ios-filled/20/000000/user.png" alt="Usuario"/></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar links">
+            </div>
+            <div class="links-actions">
+                <button class="action-btn">00 / 30</button>
+                <button class="action-btn" id="open-tag-popup">Selecciona una etiqueta</button>
+                <button class="action-btn primary">Crear un nuevo link</button>
+            </div>
+            <!-- Primer recuadro -->
+            <div class="card">
+                <h2>General</h2>
+                <p class="small-text">Actualiza tu información</p>
+                <label for="name-input">Nombre</label>
+                <input type="text" id="name-input" placeholder="Alonso Salas">
+                <label for="email-input">Correo</label>
+                <input type="email" id="email-input" placeholder="example@gmail.com">
+                <button class="btn primary float-right">Guardar</button>
+            </div>
+            <!-- Segundo recuadro -->
+            <div class="card">
+                <h2>Cuenta</h2>
+                <p class="small-text">Actualiza tus ajustes de cuenta</p>
+                <label>Exportar Links:</label>
+                <button class="btn secondary">Exportar</button>
+                <label>Eliminar cuenta:</label>
+                <button class="btn secondary">Eliminar</button>
+            </div>
+            <!-- Popup para crear nuevo link -->
+            <div class="popup" id="new-link-popup">
+                <h3>Crear nuevo link</h3>
+                <label for="url-input">URL de destino:</label>
+                <input type="text" id="url-input" placeholder="https://">
+                <label for="description-input">Descripción (opcional):</label>
+                <input type="text" id="description-input" placeholder="Ingresa una descripcion">
+                <button class="btn">No tienen ninguna etiqueta creada</button>
+                <div>
+                    <button class="btn secondary" id="cancel-btn">Cancelar</button>
+                    <button class="btn primary" id="create-btn">Crear</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

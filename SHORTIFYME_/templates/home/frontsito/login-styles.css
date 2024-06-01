@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 34px;
+    margin: 0;
+}
+
+main {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height to fit screen */
+}
+
+a h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    /* Otros estilos que quieras conservar */
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block;
+    color: inherit; /* Hereda el color del padre (h1) */
+}
+
+a:visited {
+    color: inherit; /* Hereda el color del padre (h1) incluso después de ser visitado */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn.google {
+    background-color: #fff;
+    color: #000;
+    border-color: #ccc;
+}
+
+.btn.github {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.btn.google:hover {
+    background-color: #f1f1f1;
+}
+
+.btn.github:hover {
+    background-color: #333;
+}

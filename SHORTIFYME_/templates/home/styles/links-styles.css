@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+a h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.header-container h1 {
+    font-size: 34px;
+    margin: 0;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.main-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-container nav ul li:first-child {
+    margin-right: auto;
+}
+
+.main-container nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right a {
+    color: #000;
+    margin: 0 15px;
+}
+
+.search-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.links-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn.primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.action-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.no-links {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.no-links img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.no-links p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn.secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.secondary:hover {
+    background-color: #f1f1f1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.popup h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.popup label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.popup button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.popup button.primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.popup button.secondary {
+    background-color: #fff;
+    color: #000;
+}
+
+.popup button:hover {
+    background-color: #f1f1f1;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 80%; /* Ajusta este valor para cambiar el ancho del recuadro */
+    max-width: 600px; /* Puedes establecer un ancho máximo si lo deseas */
+    margin-left: auto;
+    margin-right: auto; /* Centra el recuadro horizontalmente */
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card .small-text {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.card label, .card button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.float-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-right {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-right li {
+    display: inline;
+}
+
+.header-right img {
+    margin-left: 20px;
+}

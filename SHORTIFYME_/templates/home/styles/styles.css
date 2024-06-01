@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-container h1 {
+    position: relative;
+    font-size: 34px;
+    margin: 0;
+    left: 0;
+}
+
+header p {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+main h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn.secondary {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn.primary:hover {
+    background-color: #444;
+}
+
+.btn.secondary:hover {
+    background-color: #adadad;
+}
+
+
+a h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    /* Otros estilos que quieras conservar */
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block;
+    color: inherit; /* Hereda el color del padre (h1) */
+}
+
+a:visited {
+    color: inherit; /* Hereda el color del padre (h1) incluso después de ser visitado */
+}
